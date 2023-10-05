@@ -6,13 +6,17 @@ func buildHomePage() async -> HomePageContext {
 }
 
 func routes(_ app: Application) throws {
-//    app.get { req async in
-//        "It works!"
-//    }
 
     app.get { req async throws in
-
         return try await req.view.render("homePage", await buildHomePage())
+    }
+
+    app.get("404") { req async throws in
+        return try await req.view.render("page404")
+    }
+    
+    app.get("**") {req async throws in
+        req.redirect(to: "/404")
     }
 
 //    app.get("posts") { req async throws -> [PostModel] in

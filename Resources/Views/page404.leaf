@@ -1,0 +1,27 @@
+<div class="fof-container">
+    <h1 class="fof-heading">
+        404
+    </h1>
+    <a href="/">go back</a>
+</div>
+#extend("globalCSS")
+
+<style>
+
+.fof-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fof-heading{
+    font-size: 8rem;
+}
+
+</style>
