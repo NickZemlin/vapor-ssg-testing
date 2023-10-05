@@ -1,6 +1,45 @@
 
 #extend("homeLayout"):
     #export("page"):
-        <h1>Cringe page</h1>
+
+        #for(post in posts):
+            переделать в кастом лиф тэг
+            <article class="post-component">
+                #if(role == "ADMIN"):
+                    <button class=post-edit> edit </button>
+                #endif
+                <h2 class="post-title">
+                    #(post.title)
+                </h2>
+                <time class="post-time">
+                    #(post.timeParsed)
+                </time>
+                <p>#(post.abstract)</p>
+            </article>
+        #endfor
+        
     #endexport
 #endextend
+
+<style>
+    .post-component{
+        position: relative;
+        margin-bottom: 4em;
+    }
+    
+    .post-title{
+        
+    }
+    
+    .post-edit{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .post-time{
+        display: block;
+        margin-bottom: 1rem;
+        margin-top: -0.5rem;
+    }
+</style>
