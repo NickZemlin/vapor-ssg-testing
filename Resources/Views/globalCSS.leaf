@@ -22,6 +22,10 @@
         color: inherit;
     }
     
+    a:hover {
+        text-decoration: underline;
+    }
+    
     button {
       color: white;
       background-color: black;

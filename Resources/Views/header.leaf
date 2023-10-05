@@ -1,6 +1,10 @@
 <header class="header-component">
     <nav class="nav-component">
-        
+        <h1 style="font-size: 2rem">
+            <a href="/">
+                Swift with someone
+            </a>
+        </h1>
     </nav>
 </header>
 

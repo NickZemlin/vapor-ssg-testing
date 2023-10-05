@@ -3,13 +3,16 @@
     #export("page"):
 
         #for(post in posts):
-            переделать в кастом лиф тэг
             <article class="post-component">
                 #if(role == "ADMIN"):
-                    <button class=post-edit> edit </button>
+                    <a href="/article/#(post.id)/edit" class=post-edit>
+                        <button > edit </button>
+                    </a>
                 #endif
                 <h2 class="post-title">
-                    #(post.title)
+                    <a href="/article/#(post.id)">
+                        #(post.title)
+                    </a>
                 </h2>
                 <time class="post-time">
                     #(post.timeParsed)
