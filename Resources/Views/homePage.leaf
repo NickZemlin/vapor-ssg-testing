@@ -1,0 +1,6 @@
+
+#extend("homeLayout"):
+    #export("page"):
+        <h1>Cringe page</h1>
+    #endexport
+#endextend

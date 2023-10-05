@@ -29,6 +29,8 @@ enum Entrypoint {
         let app = Application(env)
         defer { app.shutdown() }
         
+        app.http.server.configuration.port = 3000
+        
         do {
             try await configure(app)
         } catch {

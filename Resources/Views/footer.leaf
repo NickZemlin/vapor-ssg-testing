@@ -1,0 +1,11 @@
+<footer class="footer-component">
+
+
+</footer>
+
+<style>
+    .footer-component{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+</style>

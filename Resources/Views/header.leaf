@@ -1,0 +1,20 @@
+<header class="header-component">
+    <nav class="nav-component">
+        
+    </nav>
+</header>
+
+<style>
+    .header-component{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .nav-component{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+</style>
