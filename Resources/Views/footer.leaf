@@ -1,6 +1,7 @@
 <footer class="footer-component">
-
-
+    <small>
+        Built in Swift using <a href="https://vapor.codes/">Vapor</a> and <a href="https://github.com/vapor/leaf">Leaf.
+    </small>
 </footer>
 
 <style>
